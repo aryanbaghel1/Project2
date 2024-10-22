@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to my website</title>
+    <style>
+        /* css reset */
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('new photo.jpg');
+            color: white;
+        }
+        .left{
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            display: inline-block;
+            
+        }
+        .left img {
+            filter: invert(100%);
+            width: 100px;
+            height: 100px;
+        }
+        .left div {
+            line-height: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .center{
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+        
+        }
+        .right{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            display: inline-block;
+        
+        }
+        .navbar{
+            display: inline-block;
+            color: blue;
+        }
+        .navbar li{
+            display: inline-block;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+        }
+        .navbar li a{
+            color: red;
+            text-decoration: none;
+            padding: 32px 15px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: blue;
+        }
+        .btn {
+            background-color: black;
+            color: white;
+            margin: 0px 3px;
+            padding: 3px 4px;
+            border: 2px solid aqua;
+            border-radius: 5px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(36, 32, 32);
+            color: rgb(151, 44, 98);
+        }
+        .container{
+            border: 3px solid white;
+            margin: 100px 30px;
+            padding: 60px 75px;
+            width: 40%;
+            border-radius: 20px;
+        }
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 500px;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px auto;
+        }
+        .container h2 {
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 20%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="cube logo.jpg" alt="">
+            <div>Rubik's center</div>
+        </div>
+
+        <!-- middle box for navigation bar -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="https://google.com" >Home</a></li>
+                <li><a href="httpx://instagram.com" >Algorithms</a></li>
+                <li><a href="https://twitter.com" >Types of Rubik's Cube</a></li>
+                <li><a href="https://duckduckgo.com" >Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for search option -->
+        <div class="right">
+            <button class="btn">Search Center</button>
+            <button class="btn">Call Us Now</button>
+            <button class="btn">E-mail Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best center of agra</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your E-Mail">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone No  ">
+            </div>
+            <br>
+        </form>
+        <button class="btn">Submit Now</button>
+            <br>
+            <button class="btn">Reset Now</button>
+    </div>
+</body>
+</html>
